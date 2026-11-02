@@ -1,0 +1,382 @@
+<!doctype html><html lang="nl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101e36"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Surebet"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><link rel="icon" type="image/png" href="./icon-192.png"><title>Surebet Tracker</title><style>:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#17243a;background:#f3f6fa;font-synthesis:none;font-size:14px;-webkit-text-size-adjust:100%}*{box-sizing:border-box}body{margin:0;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}a{color:#077766}header{background:#101e36;color:#fff;padding:22px 24px;position:sticky;top:0;z-index:6;box-shadow:0 6px 22px #0a224017}.shell{max-width:1160px;margin:auto}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{display:flex;align-items:center;gap:12px}.brandmark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#14c99a,#067cba);display:grid;place-items:center;color:#fff;font-size:24px;font-weight:800}.brand-title{font-size:20px;font-weight:800;letter-spacing:-.5px}.brand-sub{font-size:12px;color:#a8b9d2;margin-top:2px}.h-actions{display:flex;gap:8px}.btn{border:1px solid #d8e0eb;border-radius:11px;background:#fff;color:#132541;padding:10px 14px;font-weight:680;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:42px;text-decoration:none}.btn:hover{background:#edf4f8}.btn.primary{background:#0b9278;border-color:#0b9278;color:#fff}.btn.primary:hover{background:#07775f}.btn.dark{background:#243751;border-color:#3b526e;color:#fff}.btn.subtle{background:#f4f6fa}.btn.danger{color:#c93847;border-color:#f3c4c9}.btn.small{padding:6px 10px;min-height:32px;font-size:12px}.btn.full{width:100%}.desktop-nav{display:flex;gap:4px;padding:0 24px;max-width:1208px;margin:auto;background:#101e36}.desktop-nav button{border:0;border-bottom:3px solid transparent;background:transparent;color:#b8c9df;padding:14px 14px 12px;font-weight:700}.desktop-nav button.active{border-bottom-color:#22d2a7;color:#fff}main{max-width:1160px;margin:0 auto;padding:26px 20px 125px}h1,h2,h3,p{margin:0}h1{font-size:26px;letter-spacing:-.75px}h2{font-size:18px;letter-spacing:-.3px}h3{font-size:15px}.muted{color:#60728a}.small{font-size:12px}.kicker{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;font-weight:760;color:#59758b}.pagehead{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:20px}.pagehead p{margin-top:4px;color:#60728a;line-height:1.5}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.cols2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.card{background:#fff;border:1px solid #e1e7ee;border-radius:17px;padding:18px;box-shadow:0 3px 16px #182e4510}.metric{background:#fff;border:1px solid #e1e7ee;border-radius:16px;padding:17px;box-shadow:0 3px 16px #142b3e0b}.metric .label{font-size:12px;color:#64748b;font-weight:650}.metric .value{font-weight:790;letter-spacing:-.9px;font-size:25px;margin-top:10px;font-variant-numeric:tabular-nums}.metric .sub{font-size:11px;color:#7e8b9b;margin-top:6px}.positive{color:#087e65!important}.negative{color:#c73547!important}.warning{color:#ad7018!important}.sectionhead{display:flex;justify-content:space-between;align-items:center;margin:27px 0 13px;gap:10px}.tablebox{border:1px solid #e0e6ee;border-radius:15px;overflow-x:auto;background:white}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid #edf0f4;white-space:nowrap}th{background:#f7f9fc;font-size:11px;text-transform:uppercase;letter-spacing:.45px;color:#5e6e80}tr:last-child td{border-bottom:0}.right{text-align:right}.money{font-variant-numeric:tabular-nums}.tag{font-size:11px;font-weight:750;display:inline-block;padding:5px 9px;border-radius:99px;background:#e8f1ff;color:#315d9d}.tag.open{background:#fff3d9;color:#975c05}.tag.good{background:#e0f7ee;color:#08785e}.tag.bad{background:#ffe6e7;color:#b42d3d}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:15px}.fieldinput{border:1px solid #ced8e3;border-radius:10px;padding:11px 12px;width:100%;background:white;outline:none;min-height:43px;color:#132440}.fieldinput:focus{border-color:#0b987c;box-shadow:0 0 0 3px #0b987c1e}select.fieldinput{appearance:auto}.searchbox{min-width:190px;max-width:380px;flex:1}.bet-list{display:grid;gap:12px}.bet-card{background:#fff;border:1px solid #dfe6ed;border-radius:16px;padding:15px;box-shadow:0 3px 12px #14223b08}.bet-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.bet-name{font-size:16px;font-weight:760;letter-spacing:-.2px}.bet-meta{color:#718098;font-size:12px;margin-top:4px}.bet-legbox{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:13px 0}.bet-leg{border:2px solid #e3e9f0;border-radius:12px;padding:10px;min-width:0}.bet-leg.winner{border-color:#10a77b;background:#ecfff7;box-shadow:0 0 0 1px #10a77b20}.leg-name{font-weight:750;overflow-wrap:anywhere}.leg-detail{color:#5d6d82;font-size:12px;margin-top:5px;line-height:1.6}.bet-foot{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}.bet-actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.bet-stats{display:flex;gap:16px;flex-wrap:wrap}.statline{font-size:12px;color:#62748c}.statline strong{font-size:14px;color:#20334c;display:block;margin-top:3px}.portfolio-list{display:grid;gap:10px}.port-card{display:grid;grid-template-columns:minmax(115px,1.1fr) repeat(3,minmax(90px,1fr)) auto;align-items:center;gap:12px}.port-head{font-size:15px;font-weight:750}.port-val{font-size:15px;font-weight:780;font-variant-numeric:tabular-nums}.port-label{font-size:11px;color:#748093;margin-bottom:4px}.port-card.bad{border-color:#f5bbbf;background:#fffafa}.port-card.good{border-color:#b6dfd0}.controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.empty{text-align:center;padding:52px 18px;border:1px dashed #cbd5e1;border-radius:16px;background:#fff;color:#64748b}.empty b{display:block;color:#243a51;font-size:17px;margin-bottom:9px}.banner{background:#eaf7f3;border:1px solid #c4e9dc;border-radius:12px;padding:13px 15px;color:#186451;line-height:1.55;font-size:13px;margin:16px 0}.banner.warn{background:#fff8e9;border-color:#ffe2a9;color:#886022}.banner.error{background:#ffeded;border-color:#f8c4c6;color:#a52c39}.barrow{display:grid;grid-template-columns:85px 1fr 95px;align-items:center;gap:11px;margin:11px 0}.bartrack{height:12px;background:#e9eff5;border-radius:99px;overflow:hidden}.barfill{height:100%;background:linear-gradient(90deg,#089b85,#22c0a0);border-radius:99px}.barfill.loss{background:#d44a5a}.bars-label{font-size:12px;font-weight:680}.bars-value{text-align:right;font-size:12px;font-variant-numeric:tabular-nums}.modal-overlay{position:fixed;inset:0;z-index:30;background:#091629ad;display:flex;align-items:center;justify-content:center;padding:20px}.modal{background:white;border-radius:20px;width:min(610px,100%);max-height:92vh;display:flex;flex-direction:column;box-shadow:0 22px 60px #00102570;overflow:hidden}.modal-header{padding:18px 21px;border-bottom:1px solid #e9eef4;display:flex;justify-content:space-between;align-items:center}.modal-body{padding:20px 21px;overflow-y:auto;overscroll-behavior:contain}.modal-actions{display:flex;gap:8px;justify-content:flex-end;padding:14px 21px;border-top:1px solid #e5eaf0}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:12px;font-weight:750;color:#40526c}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.span2{grid-column:span 2}.legfield{border:1px solid #e4e9f1;border-radius:12px;padding:13px;margin:12px 0;background:#f9fbfc}.form-error{color:#b32c3d;font-size:12px;margin-top:9px}.nav-mobile{display:none}.menu-panel{display:none}.choice{display:flex;gap:7px;flex-wrap:wrap}.choice button{border:1px solid #d8e3ea;border-radius:10px;padding:10px 14px;background:#fff;font-weight:700;color:#2c405a}.choice button.on{border-color:#0b9278;color:#06735d;background:#e5f6ee}.calc-leg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:end}.calc-leg .field label{line-height:1.4}.divider{height:1px;background:#e9edf3;margin:18px 0}.helper{font-size:12px;line-height:1.6;color:#536780}.miniheading{font-weight:780;margin-bottom:8px}.entry-date{color:#718097;font-size:12px}.mobile-only{display:none}.footer-note{color:#7d8b9c;font-size:12px;text-align:center;margin:35px 0}.hidden{display:none!important}
+@media(max-width:860px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.desktop-nav{display:none}.cols2{grid-template-columns:1fr}.port-card{grid-template-columns:1.25fr 1fr 1fr;gap:9px}.port-card .total-col{display:none}.port-card .controls{grid-column:1/-1}.header-inner{min-height:40px}.h-actions .btn.dark{display:none}.nav-mobile{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #dce4ed;z-index:12;justify-content:space-around;padding:7px 4px calc(7px + env(safe-area-inset-bottom));box-shadow:0 -4px 15px #12243c0c}.nav-mobile button{border:0;background:transparent;color:#617188;display:flex;flex-direction:column;align-items:center;gap:5px;padding:5px 4px;min-width:62px;font-size:10px;font-weight:750}.nav-mobile button .nav-icon{font-size:21px}.nav-mobile button.active{color:#098f76}.menu-panel{position:fixed;display:grid;grid-template-columns:1fr;gap:8px;right:10px;bottom:calc(75px + env(safe-area-inset-bottom));z-index:15;background:white;border:1px solid #dfe7ee;border-radius:15px;padding:12px;width:215px;box-shadow:0 10px 33px #172e4442}.menu-panel button{background:#f6f8fb;border:0;padding:12px;text-align:left;border-radius:10px;font-weight:720;color:#20354a}.menu-panel.hidden{display:none}.mobile-only{display:inline}}
+@media(max-width:560px){header{padding:15px 14px}.brand-title{font-size:17px}.brand-sub{font-size:11px}.brandmark{width:38px;height:38px;font-size:22px}main{padding:20px 12px 125px}h1{font-size:22px}.pagehead{align-items:start}.pagehead .btn{padding:9px 10px;font-size:12px}.card{padding:14px}.metric{padding:14px}.metric .value{font-size:22px}.bet-card{padding:12px}.bet-legbox{grid-template-columns:repeat(2,minmax(0,1fr))}.bet-leg{padding:9px}.port-card{grid-template-columns:1.15fr .95fr;gap:11px}.port-card .available-col{grid-column:1/2}.port-card .actual-col{grid-column:2/3}.port-card .controls{grid-column:1/-1}.formgrid{grid-template-columns:1fr}.span2{grid-column:span 1}.modal-overlay{padding:0;align-items:flex-end}.modal{border-radius:20px 20px 0 0;width:100%;max-height:92vh;padding-bottom:env(safe-area-inset-bottom)}.calc-leg{grid-template-columns:1fr 1fr 1fr;gap:6px}.calc-leg input{padding:8px}.grid .metric:nth-child(3n){grid-column:auto}.port-label{font-size:10px}.port-val{font-size:14px}.h-actions .small-hide{display:none}}
+
+/* Snelle invoer op iPhone/iPad: knop blijft bereikbaar vanuit ieder tabblad. */
+.quick-new-bet{position:fixed;right:20px;bottom:22px;z-index:11;min-height:54px;border:0;border-radius:999px;background:#078c70;color:white;padding:13px 20px;font-weight:800;box-shadow:0 9px 25px #045b4690;display:flex;gap:7px;align-items:center;justify-content:center;font-size:15px}
+.quick-new-bet:active{transform:scale(.98)}
+.bet-entry-section{margin-bottom:18px}
+.bet-entry-section>h3,.entry-section-heading h3{font-size:14px;color:#172e45;letter-spacing:0;margin:0 0 10px}
+.entry-section-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.entry-section-heading h3{margin:0}
+.entry-section-heading:not(:last-child){margin-bottom:10px}
+.bet-entry-form .legfield{margin:10px 0;background:#f7fafc;border:1px solid #e2eaf1;padding:12px}
+.bet-entry-form .legfield .formgrid{row-gap:10px}
+.bet-entry-form .legfield .field input,.bet-entry-form .legfield .field select{background:white}
+.bet-entry-form .leg-own{font-weight:750;font-size:12px;color:#0d8069}
+.bet-live-summary{background:#f1f8f6;border:1px solid #cceadf;border-radius:12px;padding:12px}
+.bet-summary-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.bet-summary-stats>div{display:flex;flex-direction:column;gap:7px;min-width:0}
+.bet-summary-stats span{font-size:11px;color:#536a77;font-weight:700}
+.bet-summary-stats strong{font-size:16px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bet-live-summary .helper{margin-top:10px}
+.bet-actual-preview{padding-top:10px;margin-top:10px;border-top:1px solid #cceadf;color:#536a77;font-size:12px}
+.bet-actual-preview b{font-size:15px}
+.bet-result-details{background:#f7fafc;border:1px solid #e2eaf1;border-radius:12px;padding:13px;margin:14px 0}
+.bet-result-details summary{font-weight:790;color:#1f3650;cursor:pointer;list-style-position:outside}
+.bet-result-details[open] summary{margin-bottom:6px}
+.bet-entry-form .fieldinput{font-size:16px} /* voorkomt ongewenste zoom bij toetsenbord in Safari */
+.modal-actions{background:#fff;flex-shrink:0}
+@media(max-width:860px){.quick-new-bet{bottom:calc(80px + env(safe-area-inset-bottom));right:13px;z-index:11}}
+@media(max-width:560px){.modal{max-height:96dvh}.modal-overlay{z-index:40}.modal-header{padding:14px 16px}.modal-body{padding:14px 16px}.modal-actions{padding:11px 16px;gap:9px}.modal-actions>.btn.primary{flex:1}.bet-summary-stats{gap:7px}.bet-summary-stats strong{font-size:13px}.quick-new-bet{min-height:53px;padding:12px 18px}.bet-entry-form .formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.bet-entry-form .span2{grid-column:span 2}.bet-entry-form .legfield .field label{font-size:11px}}
+@media(min-width:861px){.quick-new-bet{bottom:23px}}
+
+/* Surebets Dutch identity and app navigation */
+.brandmark{background:white;overflow:hidden;padding:3px}.brand-img{width:100%;height:100%;object-fit:contain;border-radius:10px}
+.desktop-nav button{display:flex;align-items:center;gap:7px}
+.page-icon{width:25px;height:25px;object-fit:cover;border-radius:7px;vertical-align:middle;flex-shrink:0}
+.desktop-nav .page-icon{width:24px;height:24px}
+.nav-mobile button .page-icon{width:26px;height:26px;border-radius:8px}
+.menu-icon{width:26px;height:26px;border-radius:6px;vertical-align:middle;margin-right:8px}
+.dashboard-brand{display:flex;justify-content:flex-start;margin:-9px 0 14px}
+.dashboard-brand img{width:125px;height:90px;object-fit:contain;object-position:left center;background:white;border-radius:12px;padding:5px;border:1px solid #e3eaf1}
+.calc-leg{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px;margin:10px 0;background:#f8fafc;border:1px solid #e5ebf1;border-radius:12px;align-items:end}
+.calc-leg .field label{min-height:28px}
+@media(min-width:860px){.calc-leg{grid-template-columns:repeat(4,minmax(0,1fr))}.dashboard-brand img{width:150px;height:104px}}
+@media(max-width:560px){.calc-leg .fieldinput{font-size:16px}.pagehead{align-items:flex-start}.desktop-nav{display:none}}
+
+#save-warning{pointer-events:none}
+</style></head><body><header><div class="shell header-inner"><div class="logo"><div class="brandmark"><img src="./icon-192.png" alt="" class="brand-img"></div><div><div class="brand-title">Surebets</div><div class="brand-sub">Jouw bets & portefeuille</div></div></div><div class="h-actions"><button class="btn dark small-hide" data-action="restore">Herstellen</button><button class="btn primary" data-action="backup">↓ Back-up</button></div></div></header><div class="desktop-nav"> <button data-nav="dashboard" class="active">Dashboard</button><button data-nav="bets"><img src="./assets/bets.png" class="page-icon" alt="" loading="lazy">Bets</button><button data-nav="portfolio"><img src="./assets/portfolio.png" class="page-icon" alt="" loading="lazy">Portefeuille</button><button data-nav="flows"><img src="./assets/flows.png" class="page-icon" alt="" loading="lazy">Stortingen & opnames</button><button data-nav="casino"><img src="./assets/casino.png" class="page-icon" alt="" loading="lazy">Casino</button><button data-nav="calculator"><img src="./assets/calculator.png" class="page-icon" alt="" loading="lazy">Rekentool</button></div><main id="app"></main><button type="button" id="quick-new-bet" class="quick-new-bet" data-action="new-bet" aria-label="Nieuwe bet toevoegen"><span aria-hidden="true">＋</span> Nieuwe bet</button><div id="modal-root"></div><input type="file" id="restore-file" accept=".json,application/json" class="hidden"><div id="save-warning" class="banner error hidden" style="position:fixed;bottom:80px;left:12px;right:12px;z-index:20">Opslaan werkt mogelijk niet in dit bestandsvoorbeeld. Open de app via HTTPS en maak een back-up.</div><nav class="nav-mobile" aria-label="Hoofdnavigatie"><button data-nav="dashboard" class="active"><span class="nav-icon"><img src="./assets/dashboard.png" class="page-icon" alt="" loading="lazy"></span>Dashboard</button><button data-nav="bets"><span class="nav-icon"><img src="./assets/bets.png" class="page-icon" alt="" loading="lazy"></span>Bets</button><button data-nav="portfolio"><span class="nav-icon"><img src="./assets/portfolio.png" class="page-icon" alt="" loading="lazy"></span>Saldo</button><button data-nav="calculator"><span class="nav-icon"><img src="./assets/calculator.png" class="page-icon" alt="" loading="lazy"></span>Rekenen</button><button data-action="more"><span class="nav-icon">•••</span>Meer</button></nav><div class="menu-panel hidden" id="menu-panel"><button data-nav="flows"><img src="./assets/flows.png" class="menu-icon" alt=""> Stortingen & opnames</button><button data-nav="casino"><img src="./assets/casino.png" class="menu-icon" alt=""> Casinowinsten</button><button data-action="backup">↓ Back-up bewaren</button><button data-action="restore">↥ Back-up herstellen</button></div><script>window.SUREBET_SEED={"version":2,"books":[],"bets":[],"flows":[],"casinos":[]};</script><script>/* Surebet finance engine – all currency arithmetic rounded to eurocents. */
+(function(root,factory){const v=factory();if(typeof module==='object'&&module.exports)module.exports=v;root.SurebetEngine=v;})(typeof globalThis==='object'?globalThis:this,function(){
+ const money=v=>Math.round((Number(v)||0)*100+1e-7)/100;
+ const number=v=>{const x=Number(String(v??'').trim().replace(',','.'));return Number.isFinite(x)?x:0;};
+ const key=v=>String(v||'').trim().toLocaleLowerCase('nl-NL');
+ const own=leg=>money(Math.max(0,number(leg.stake)-number(leg.freebet)));
+ const payout=leg=>money(number(leg.stake)*number(leg.odd)-number(leg.freebet));
+ const legs=bet=>Array.isArray(bet.legs)?bet.legs:[];
+ const totalOwn=bet=>money(legs(bet).reduce((s,l)=>s+own(l),0));
+ const scenarioIndices=bet=>bet.type==='2plus3'?[[0],[1,2]]:bet.type==='3way'?[[0],[1],[2]]:[[0],[1]];
+ const payoutFor= (bet,winner)=>{
+  if(winner==='open'||winner==null||winner==='')return 0;
+  let indices=(bet.type==='2plus3'&&(String(winner)==='23'||String(winner)==='2'||String(winner)==='3'))?[1,2]:[Number(winner)-1];
+  return money(indices.reduce((s,i)=>s+(legs(bet)[i]?payout(legs(bet)[i]):0),0));
+ };
+ const settled=bet=>bet.winner!==''&&bet.winner!=null&&String(bet.winner)!=='open';
+ const profit=bet=>settled(bet)?money(payoutFor(bet,bet.winner)-totalOwn(bet)):null;
+ const expectedMin=bet=>{
+  if(legs(bet).length<(bet.type==='2way'?2:3))return null;
+  const cost=totalOwn(bet);
+  return money(Math.min(...scenarioIndices(bet).map(group=>group.reduce((s,i)=>s+payout(legs(bet)[i]),0)))-cost);
+ };
+ const winners=bet=>!settled(bet)?[]:(bet.type==='2plus3'&&['23','2','3'].includes(String(bet.winner))?[1,2]:[Number(bet.winner)-1]);
+ const allBooks=data=>{const seen=new Map();const add=name=>{let s=String(name||'').trim();if(s&&!seen.has(key(s)))seen.set(key(s),s)};(data.books||[]).forEach(b=>add(b.name));(data.bets||[]).forEach(b=>legs(b).forEach(l=>add(l.book)));(data.flows||[]).forEach(f=>add(f.book));(data.casinos||[]).forEach(c=>add(c.book));return [...seen.values()];};
+ const perBook=(data,name)=>{
+  let k=key(name), flows=(data.flows||[]).filter(f=>key(f.book)===k), casino=(data.casinos||[]).filter(c=>key(c.book)===k);
+  const net=money(flows.reduce((s,f)=>s+(f.type==='withdrawal'?-1:1)*number(f.amount),0));
+  let staked=0,payouts=0,open=0,realizedStake=0;
+  (data.bets||[]).forEach(b=>{
+   legs(b).forEach((l,i)=>{
+    if(key(l.book)!==k)return;
+    const v=own(l);staked+=v;if(!settled(b))open+=v;else{realizedStake+=v;if(winners(b).includes(i))payouts+=payout(l);}
+   });
+  });
+  const casinoWin=money(casino.reduce((s,c)=>s+number(c.amount),0));
+  const available=money(net-staked+payouts+casinoWin);
+  const current=(data.books||[]).find(b=>key(b.name)===k);
+  const actual=current&&current.actual!==null&&current.actual!==''&&current.actual!==undefined?money(number(current.actual)):null;
+  return {name,net,staked:money(staked),payouts:money(payouts),casino:casinoWin,available,open:money(open),total:money(available+open),actual,difference:actual===null?null:money(actual-available),profit:money(payouts-realizedStake+casinoWin)};
+ };
+ const report=data=>{
+  const bets=data.bets||[], cas=data.casinos||[], books=allBooks(data).map(n=>perBook(data,n));
+  const betProfit=money(bets.reduce((s,b)=>s+(profit(b)??0),0));
+  const casinoProfit=money(cas.reduce((s,c)=>s+number(c.amount),0));
+  const stakeOpen=money(bets.filter(b=>!settled(b)).reduce((s,b)=>s+totalOwn(b),0));
+  const settledStake=money(bets.filter(settled).reduce((s,b)=>s+totalOwn(b),0));
+  return {bets:bets.length,open:bets.filter(b=>!settled(b)).length,closed:bets.filter(settled).length,betProfit,casinoProfit,totalProfit:money(betProfit+casinoProfit),available:money(books.reduce((s,b)=>s+b.available,0)),openStake:stakeOpen,portfolio:money(books.reduce((s,b)=>s+b.total,0)),netDeposits:money(books.reduce((s,b)=>s+b.net,0)),settledStake,roi:settledStake?money(100*betProfit/settledStake):0,books};
+ };
+ function calculator(type,odds,budget,freebets,existing,roundTo=1){
+  const n=type==='3way'?3:2;
+  odds=odds.slice(0,n).map(number); freebets=freebets.slice(0,n).map(number);existing=existing.slice(0,n).map(number);
+  if(odds.some(x=>x<=1)||[...freebets,...existing].some(x=>x<0))return null;
+  const unit=Math.max(.01,number(roundTo)||1), rnd=v=>money(Math.max(0,Math.round(v/unit)*unit));
+  let add=[];
+  if(freebets.every(x=>!x)&&existing.every(x=>!x)){
+   const funds=number(budget);
+   if(funds<=0)return null;
+   const sum=odds.reduce((s,v)=>s+1/v,0);
+   add=odds.map(o=>rnd(funds/o/sum));
+   // Allocate remainder to the last leg, maintaining the entered total investment.
+   add[n-1]=money(Math.max(0,funds-add.slice(0,n-1).reduce((s,v)=>s+v,0)));
+  } else {
+   const base=odds.map((o,i)=>money(freebets[i]*(o-1)+existing[i]*o));
+   const goal=Math.max(...base);
+   add=base.map((b,i)=>rnd((goal-b)/odds[i]));
+  }
+  const ownTotal=money(add.reduce((s,v)=>s+v,0)+existing.reduce((s,v)=>s+v,0));
+  const profits=odds.map((o,i)=>money(freebets[i]*(o-1)+(existing[i]+add[i])*o-ownTotal));
+  return {add,profitByOutcome:profits,minProfit:Math.min(...profits),extraOwn:money(add.reduce((s,v)=>s+v,0)),totalOwn:ownTotal,roi:ownTotal?money(Math.min(...profits)/ownTotal*100):null,roundTo:unit};
+ }
+ return {money,number,key,own,payout,totalOwn,payoutFor,settled,profit,expectedMin,winners,allBooks,perBook,report,calculator};
+});
+</script><script>(function(){'use strict';
+const E=window.SurebetEngine, SEED=window.SUREBET_SEED, STORAGE='surebet-pwa-personal-v1';
+const el=document.getElementById('app'), overlay=document.getElementById('modal-root');
+const euro=v=>new Intl.NumberFormat('nl-NL',{style:'currency',currency:'EUR'}).format(E.money(v));
+const decimals=v=>String(v??'').replace('.',',');
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dateFmt=v=>v?new Date(v+'T12:00:00').toLocaleDateString('nl-NL',{day:'numeric',month:'short',year:'numeric'}):'Datum onbekend';
+const today=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
+const id=()=>typeof crypto!=='undefined'&&crypto.randomUUID?crypto.randomUUID():'id-'+Date.now()+'-'+Math.random().toString(36).slice(2);
+const currencyClass=x=>x<-.005?'negative':x>.005?'positive':'';
+let data,view='dashboard',filter='open',search='',sort='oldest',menuOpen=false,storeOk=true;
+try{const raw=localStorage.getItem(STORAGE);data=raw?JSON.parse(raw):structuredClone(SEED);}catch(e){data=structuredClone(SEED);storeOk=false;}
+function validState(a){return a&&Array.isArray(a.books)&&Array.isArray(a.bets)&&Array.isArray(a.flows)&&Array.isArray(a.casinos)}
+if(!validState(data))data=structuredClone(SEED);
+function persist(){try{localStorage.setItem(STORAGE,JSON.stringify(data));storeOk=true;}catch(e){storeOk=false;alert('Opslaan is niet beschikbaar in deze weergave. Bewaar een JSON-back-up en gebruik de app via een HTTPS-website.');}}
+function num(value){return E.number(value)}
+function btn(txt,action,cls=''){return `<button class="btn ${cls}" data-action="${action}">${txt}</button>`}
+function metric(label,value,sub='',tone=''){return `<div class="metric"><div class="label">${esc(label)}</div><div class="value ${tone}">${esc(value)}</div><div class="sub">${esc(sub)}</div></div>`}
+function pagehead(title,subtitle,button=''){return `<div class="pagehead"><div><h1>${title}</h1><p>${subtitle}</p></div>${button}</div>`}
+function empty(title,detail){return `<div class="empty"><b>${title}</b>${detail}</div>`}
+const displayLabels={'2way':'2-way','3way':'3-way','2plus3':'2-way (2 + 3)','open':'Open','1':'Bet 1 wint','2':'Bet 2 wint','3':'Bet 3 wint','23':'Bet 2 + 3 winnen','deposit':'Storting','withdrawal':'Opname'};
+const opts=(values,sel)=>values.map(v=>`<option value="${esc(v)}" ${String(v)===String(sel)?'selected':''}>${esc(displayLabels[v]||v)}</option>`).join('');
+const bookOptions=selected=>opts(E.allBooks(data),selected);
+function shell(){document.querySelectorAll('[data-nav]').forEach(x=>x.classList.toggle('active',x.dataset.nav===view));document.getElementById('menu-panel').classList.toggle('hidden',!menuOpen);document.getElementById('save-warning').classList.toggle('hidden',storeOk);}
+function render(){const report=E.report(data);shell();el.innerHTML=(view==='dashboard'?dashboard(report):view==='bets'?betsPage(report):view==='portfolio'?portfolio(report):view==='flows'?flowsPage(report):view==='casino'?casinoPage(report):calcPage());if(view==='calculator')recalc();}
+function goto(page){view=page;menuOpen=false;search='';if(page==='bets'){filter='open';sort='oldest';}render();window.scrollTo({top:0,behavior:'instant'});}
+function dashboard(r){
+ const months=new Map();for(const b of data.bets){if(!E.settled(b))continue;const k=(b.settledDate||b.date||'onbekend').slice(0,7);months.set(k,E.money((months.get(k)||0)+E.profit(b)))}for(const c of data.casinos){const k=(c.date||'onbekend').slice(0,7);months.set(k,E.money((months.get(k)||0)+num(c.amount)))}
+ const history=[...months].sort((a,b)=>a[0].localeCompare(b[0])).slice(-7),max=Math.max(1,...history.map(x=>Math.abs(x[1])));
+ const checks=r.books.filter(x=>x.actual!==null),deviations=checks.filter(x=>Math.abs(x.difference)>.009);
+ const warning=deviations.length?`<div class="banner warn">Bij <b>${deviations.length} bookmaker${deviations.length>1?'s':''}</b> wijkt het werkelijk opneembare saldo af. Controleer de portefeuille. Bestaande verschillen uit je Excelbestand zijn overgenomen.</div>`:'';
+ return `<div class="dashboard-brand"><img src="./assets/surebets-logo.png" alt="Surebets"></div>`+pagehead('Dashboard','Je winst en portefeuille in één oogopslag',btn('＋ Nieuwe bet','new-bet','primary'))+
+ `<div class="grid">${metric('Totale winst',euro(r.totalProfit),'Afgeronde bets + casino',currencyClass(r.totalProfit))}${metric('Winst uit bets',euro(r.betProfit),r.closed+' afgerond',currencyClass(r.betProfit))}${metric('Casinowinst',euro(r.casinoProfit),'Gratis spins en correcties',currencyClass(r.casinoProfit))}${metric('Direct opneembaar',euro(r.available),'Berekend via alle goksites',currencyClass(r.available))}${metric('Geplaatste bets',String(r.bets),r.open+' open / '+r.closed+' afgerond')}${metric('Open eigen inzet',euro(r.openStake),'Niet direct opneembaar')}${metric('Portefeuille totaal',euro(r.portfolio),'Beschikbaar + open eigen inzet')}${metric('ROI afgeronde bets',r.roi.toLocaleString('nl-NL')+'%', 'Winst / eigen inzet afgerekend',currencyClass(r.roi))}</div>${warning}`+
+ `<div class="cols2"><section><div class="sectionhead"><h2>Winst per maand</h2></div><div class="card">${history.length?history.map(([m,n])=>`<div class="barrow"><span class="bars-label">${esc(m==='onbekend'?'Onbekend':m)}</span><div class="bartrack"><div class="barfill ${n<0?'loss':''}" style="width:${Math.max(2,Math.abs(n)/max*100)}%"></div></div><span class="bars-value ${currencyClass(n)}">${euro(n)}</span></div>`).join(''):empty('Nog geen resultaten','Rond een bet af om je winst te zien.')}</div></section>
+ <section><div class="sectionhead"><h2>Winst per bookmaker</h2></div><div class="card">${r.books.filter(x=>x.net||x.staked||x.payouts||x.casino).sort((a,b)=>b.profit-a.profit).slice(0,12).map(x=>`<div class="barrow" style="grid-template-columns:110px 1fr 85px"><span class="bars-label">${esc(x.name)}</span><div class="bartrack"><div class="barfill ${x.profit<0?'loss':''}" style="width:${Math.max(2,Math.abs(x.profit)/Math.max(1,...r.books.map(y=>Math.abs(y.profit)))*100)}%"></div></div><span class="bars-value ${currencyClass(x.profit)}">${euro(x.profit)}</span></div>`).join('')}</div></section></div>
+ <div class="sectionhead"><h2>Recente bets</h2>${btn('Alle bets →','show-bets','small')}</div>${compactBets(data.bets.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0,4))}<p class="footer-note">De app is een lokale administratie. Bewaar regelmatig een JSON-back-up.</p>`;
+}
+function sortBets(a,b){return sort==='oldest'?(a.date||'').localeCompare(b.date||'')||String(a.createdAt||'').localeCompare(String(b.createdAt||'')):(b.date||'').localeCompare(a.date||'') || String(b.createdAt||'').localeCompare(String(a.createdAt||'')) || String(a.id).localeCompare(String(b.id))}
+function compactBets(items){return items.length?`<div class="bet-list">${items.map(betCard).join('')}</div>`:empty('Nog geen bets','Voeg hierboven je eerste bet toe.');}
+function betCard(b){const isSettled=E.settled(b),win=E.winners(b),expected=E.expectedMin(b),p=E.profit(b);
+ const own=E.totalOwn(b);
+ return `<article class="bet-card"><div class="bet-top"><div><div class="bet-name">${esc(b.event)}</div><div class="bet-meta">${dateFmt(b.date)} · ${b.type==='2way'?'2-way':b.type==='3way'?'3-way':'2-way (2+3)'}</div></div><span class="tag ${isSettled?'good':'open'}">${isSettled?'Afgerond':'Open'}</span></div>
+ <div class="bet-legbox">${b.legs.map((l,i)=>`<div class="bet-leg ${win.includes(i)?'winner':''}"><div class="leg-name">${win.includes(i)?'✓ ':''}${esc(l.book)}</div><div class="leg-detail">Bet ${i+1} · odd ${num(l.odd).toLocaleString('nl-NL')}<br>Inzet ${euro(l.stake)}${num(l.freebet)?`<br>Freebet ${euro(l.freebet)}`:''}</div></div>`).join('')}</div>
+ <div class="bet-foot"><div class="bet-stats"><div class="statline">Eigen inzet<strong>${euro(own)}</strong></div><div class="statline">Min. verwacht<strong class="${expected===null?'':currencyClass(expected)}">${expected===null?'—':euro(expected)}</strong></div>${isSettled?`<div class="statline">Netto resultaat<strong class="${currencyClass(p)}">${euro(p)}</strong></div>`:''}</div><div class="bet-actions">${!isSettled?`<button class="btn small primary" data-action="settle-bet" data-id="${esc(b.id)}">Uitslag</button>`:''}<button class="btn small subtle" data-action="edit-bet" data-id="${esc(b.id)}">Bewerken</button></div></div></article>`;
+}
+function betsPage(r){let list=data.bets.filter(b=>filter==='open'?!E.settled(b):filter==='closed'?E.settled(b):true).filter(b=>!search||[b.event,...b.legs.map(l=>l.book)].join(' ').toLowerCase().includes(search.toLowerCase())).slice().sort(sortBets);
+ return pagehead('Bets','Standaard: open bets, oudste eerst · via filters vrij aanpasbaar',btn('＋ Nieuwe bet','new-bet','primary'))+
+ `<div class="toolbar"><input aria-label="Zoeken in bets" id="bet-search" class="fieldinput searchbox" placeholder="Zoek wedstrijd of bookmaker" value="${esc(search)}"><select id="bet-filter" class="fieldinput" style="width:auto">${opts(['Alle','Open','Afgerond'],filter==='open'?'Open':filter==='closed'?'Afgerond':'Alle')}</select><select id="bet-sort" class="fieldinput" style="width:auto">${opts(['Nieuwste eerst','Oudste eerst'],sort==='newest'?'Nieuwste eerst':'Oudste eerst')}</select></div><p class="muted small" style="margin-bottom:12px">${list.length} bets zichtbaar · ${r.bets} totaal · ${r.open} openstaand</p>${compactBets(list)}`;
+}
+function portfolio(r){const mismatch=r.books.filter(x=>x.actual!==null&&Math.abs(x.difference)>.009);
+ return pagehead('Portefeuille','Je vult alleen de bookmakers en het écht opneembare saldo in',btn('＋ Bookmaker','new-book','primary'))+
+ `<div class="grid">${metric('Berekend opneembaar',euro(r.available),'Volgens je administratie')}${metric('Openstaande inzet',euro(r.openStake),'Eigen geld in open bets')}${metric('Totaal op goksites',euro(r.portfolio),'Opneembaar + openstaand')}${metric('Afwijkingen',String(mismatch.length),mismatch.length?'Boekmakers wijken af':'Geen afwijkingen bij gecontroleerde sites',mismatch.length?'negative':'positive')}</div>
+ <div class="banner">De app berekent per site: <b>netto stortingen − eigen inzetten + uitbetalingen + casinowinst</b>. Tik op <b>Controleer saldo</b> om het bedrag van de bookmakerwebsite in te voeren.</div>
+ <div class="sectionhead"><h2>Alle bookmakers</h2></div><div class="portfolio-list">${r.books.map(x=>`<div class="card port-card ${x.difference===null?'':Math.abs(x.difference)>.009?'bad':'good'}"><div><div class="port-head">${esc(x.name)}</div><div class="small muted" style="margin-top:5px">${x.difference===null?'<span class="tag">Niet gecontroleerd</span>':Math.abs(x.difference)>.009?'<span class="tag bad">VERSCHIL</span>':'<span class="tag good">OK</span>'}</div></div><div class="available-col"><div class="port-label">Volgens app</div><div class="port-val ${currencyClass(x.available)}">${euro(x.available)}</div><div class="muted small">Open: ${euro(x.open)}</div></div><div class="actual-col"><div class="port-label">Echt opneembaar</div><div class="port-val">${x.actual===null?'—':euro(x.actual)}</div>${x.difference===null?'':`<div class="small ${currencyClass(x.difference)}">Verschil ${euro(x.difference)}</div>`}</div><div class="total-col"><div class="port-label">Totaal incl. open</div><div class="port-val">${euro(x.total)}</div></div><div class="controls"><button class="btn small primary" data-action="check-book" data-name="${esc(x.name)}">Controleer saldo</button><button class="btn small subtle" data-action="edit-book" data-name="${esc(x.name)}">Wijzig naam</button></div></div>`).join('')}</div>`;
+}
+function flowsPage(r){const entries=data.flows.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+ return pagehead('Stortingen & opnames','Elke mutatie wordt direct bij de juiste bookmaker verwerkt',btn('＋ Mutatie','new-flow','primary'))+`<div class="grid">${metric('Netto gestort',euro(r.netDeposits),'Stortingen minus opnames')}${metric('Totaal gestort',euro(data.flows.filter(f=>f.type==='deposit').reduce((s,f)=>s+num(f.amount),0)),'Alle bookmakers')}${metric('Totaal opgenomen',euro(data.flows.filter(f=>f.type==='withdrawal').reduce((s,f)=>s+num(f.amount),0)),'Alle bookmakers')}${metric('Mutaties',String(data.flows.length),'Alle registraties')}</div><div class="sectionhead"><h2>Mutatieoverzicht</h2></div>${entries.length?`<div class="tablebox"><table><thead><tr><th>Datum</th><th>Goksite</th><th>Soort</th><th class="right">Bedrag</th><th></th></tr></thead><tbody>${entries.map(f=>`<tr><td>${dateFmt(f.date)}</td><td>${esc(f.book)}</td><td><span class="tag ${f.type==='withdrawal'?'open':'good'}">${f.type==='withdrawal'?'Opname':'Storting'}</span></td><td class="right">${euro(f.amount)}</td><td class="right"><button class="btn small subtle" data-action="edit-flow" data-id="${esc(f.id)}">Wijzig</button></td></tr>`).join('')}</tbody></table></div>`:empty('Geen stortingen','Voeg je eerste storting toe.')}`;
+}
+function casinoPage(r){const entries=data.casinos.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+ return pagehead('Casinowinsten','Winst uit gratis spins en correcties wordt bij de bookmaker opgeteld',btn('＋ Casinowinst','new-casino','primary'))+`<div class="grid">${metric('Totale casinowinst',euro(r.casinoProfit),'Opgenomen in de portefeuille',currencyClass(r.casinoProfit))}${metric('Registraties',String(entries.length),'Casinotransacties')}</div><div class="sectionhead"><h2>Bijschrijvingen</h2></div>${entries.length?`<div class="tablebox"><table><thead><tr><th>Datum</th><th>Goksite</th><th>Omschrijving</th><th class="right">Bedrag</th><th></th></tr></thead><tbody>${entries.map(c=>`<tr><td>${dateFmt(c.date)}</td><td>${esc(c.book)}</td><td>${esc(c.note||'Gratis spins')}</td><td class="right ${currencyClass(c.amount)}">${euro(c.amount)}</td><td class="right"><button class="btn small subtle" data-action="edit-casino" data-id="${esc(c.id)}">Wijzig</button></td></tr>`).join('')}</tbody></table></div>`:empty('Nog geen casinowinsten','Voeg een bijschrijving toe.')}`;
+}
+function calcPage(){
+ return pagehead('Rekentool','2-way en 3-way · met freebets, inzetlimieten en nabije alternatieven','')+
+ `<div class="card"><div class="formgrid"><div class="field"><label>Type</label><select class="fieldinput" id="calc-type"><option value="2way">2-way</option><option value="3way">3-way</option></select></div><div class="field"><label>Afronden op</label><select class="fieldinput" id="calc-round"><option value="0.01">€ 0,01 (exact)</option><option selected value="1">€ 1</option><option value="5">€ 5</option><option value="10">€ 10</option></select></div><div class="field span2"><label>Maximaal extra eigen geld in totaal (€)</label><input class="fieldinput" id="calc-budget" inputmode="decimal" value="100" placeholder="Bijv. 100"></div></div><div class="divider"></div><div class="miniheading">Inzetten en maxima per uitkomst</div><p class="helper">Voer je odds in. Bij iedere uitkomst kun je een freebet en een al geplaatste eigen inzet aangeven. Heb je een bookmakerlimiet? Vul dan bij <b>Max. extra</b> het hoogste bedrag in dat je daar <b>nog</b> kunt inzetten. Leeg betekent geen afzonderlijke limiet.</p>
+ <div id="calc-legs">${[0,1,2].map(i=>`<div class="calc-leg" data-legrow="${i}" ${i===2?'style="display:none"':''}><div class="field"><label>Odd ${i+1}</label><input class="fieldinput calc-input" inputmode="decimal" data-col="odd" data-i="${i}" value="${i===0?'2':i===1?'2,38':'3,2'}"></div><div class="field"><label>Freebet (€) ${i+1}</label><input class="fieldinput calc-input" inputmode="decimal" data-col="free" data-i="${i}" value="0"></div><div class="field"><label>Reeds eigen (€) ${i+1}</label><input class="fieldinput calc-input" inputmode="decimal" data-col="own" data-i="${i}" value="0"></div><div class="field"><label>Max. extra (€) ${i+1}</label><input class="fieldinput calc-input" inputmode="decimal" data-col="max" data-i="${i}" placeholder="Geen limiet"></div></div>`).join('')}</div><div class="divider"></div><div id="calc-result" aria-live="polite"></div></div><div class="banner warn">De berekening zoekt de <b>hoogste minimale winst</b> binnen je budget, bookmakerlimieten en gekozen afronding. Ze houdt rekening met freebets: freebet × (odd − 1). Bij ongunstige odds kan er géén gegarandeerd winstgevende verdeling bestaan.</div>`;
+}
+function optimizeStakes(type,odds,free,already,budget,roundTo,caps){
+ const n=type==='3way'?3:2,u=Math.max(.01,roundTo),money=E.money;
+ odds=odds.slice(0,n);free=free.slice(0,n);already=already.slice(0,n);caps=caps.slice(0,n);
+ if(odds.some(v=>v<=1||!Number.isFinite(v))||free.some(v=>v<0)||already.some(v=>v<0)||!Number.isFinite(budget)||budget<0)return null;
+ const maxBudgetUnits=Math.max(0,Math.floor((budget+1e-8)/u));
+ const capUnits=caps.map(c=>Math.min(maxBudgetUnits,Math.floor((Math.max(0,c)+1e-8)/u)));
+ const bases=odds.map((o,i)=>free[i]*(o-1)+already[i]*o);
+ const ownExisting=already.reduce((a,b)=>a+b,0);
+ const payAt=t=>bases.reduce((acc,b,i)=>acc+Math.max(0,(t-b)/odds[i]),0);
+ const upper=Math.min(...bases.map((b,i)=>b+odds[i]*capUnits[i]*u));
+ let lo=Math.min(...bases),hi=upper;
+ if(payAt(hi)>maxBudgetUnits*u+1e-8){for(let i=0;i<60;i++){const mid=(lo+hi)/2;if(payAt(mid)>maxBudgetUnits*u)hi=mid;else lo=mid}}else lo=hi;
+ const target=lo;
+ const valid=[],seen=new Set();
+ const evaluate=units=>{
+  if(units.some((x,i)=>x<0||x>capUnits[i])||units.reduce((a,b)=>a+b,0)>maxBudgetUnits)return;
+  const k=units.join(',');if(seen.has(k))return;seen.add(k);
+  const add=units.map(x=>money(x*u)),spent=money(add.reduce((a,b)=>a+b,0)),cost=money(ownExisting+spent);
+  const profits=odds.map((o,i)=>money(bases[i]+add[i]*o-cost));
+  valid.push({add,extraOwn:spent,totalOwn:cost,profitByOutcome:profits,minProfit:Math.min(...profits)});
+ };
+ const levels=[target,0,...bases,upper];
+ for(const offset of [-3,-2,-1,0,1,2,3])levels.push(target+offset*u*Math.min(...odds));
+ for(let t of levels){
+  const ctr=bases.map((b,i)=>Math.min(capUnits[i],Math.max(0,Math.round(Math.max(0,(t-b)/odds[i])/u))));
+  const loop=(arr,i)=>{if(i===n){evaluate(arr);return}for(let d=-3;d<=3;d++){const v=ctr[i]+d;if(v>=0&&v<=capUnits[i])loop([...arr,v],i+1)}};
+  loop([],0);
+ }
+ // Add nearby combinations next to full maximum stakes, which are frequently binding.
+ for(let i=0;i<n;i++){
+  const ctr=bases.map((b,j)=>Math.min(capUnits[j],Math.max(0,Math.round(Math.max(0,(target-b)/odds[j])/u))));
+  ctr[i]=capUnits[i];
+  const loop=(arr,j)=>{if(j===n){evaluate(arr);return}for(let d=-2;d<=2;d++){const v=ctr[j]+d;if(v>=0&&v<=capUnits[j])loop([...arr,v],j+1)}};
+  loop([],0);
+ }
+ evaluate(new Array(n).fill(0));
+ if(!valid.length)return null;
+ valid.sort((a,b)=>b.minProfit-a.minProfit||a.extraOwn-b.extraOwn);
+ const best=valid[0];
+ const alternatives=[];
+ for(const cand of valid.slice(1)){
+  if(alternatives.length>=3)break;
+  const dist=cand.add.reduce((s,x,i)=>s+Math.abs(x-best.add[i]),0);
+  if(dist<=Math.max(u*6,0.01)&&!alternatives.some(a=>a.add.every((v,i)=>v===cand.add[i])))alternatives.push(cand);
+ }
+ return {...best,alternatives,roundTo:u,appliedCaps:capUnits.map(v=>money(v*u)),budget:money(maxBudgetUnits*u)};
+}
+function recalc(){
+ const ty=document.getElementById('calc-type');if(!ty)return;
+ const type=ty.value,third=type==='3way',thirdRow=document.querySelector('[data-legrow="2"]');if(thirdRow)thirdRow.style.display=third?'grid':'none';
+ const get=(col,i)=>num(document.querySelector(`[data-col="${col}"][data-i="${i}"]`)?.value);
+ const budgetRaw=document.getElementById('calc-budget').value,budget=num(budgetRaw),unit=num(document.getElementById('calc-round').value);
+ const n=third?3:2,odds=[...Array(n)].map((_,i)=>get('odd',i)),free=[...Array(n)].map((_,i)=>get('free',i)),already=[...Array(n)].map((_,i)=>get('own',i));
+ const caps=[...Array(n)].map((_,i)=>{const s=document.querySelector(`[data-col="max"][data-i="${i}"]`).value.trim();return s===''?budget:num(s)});
+ const r=optimizeStakes(type,odds,free,already,budget,unit,caps);
+ const dest=document.getElementById('calc-result');if(!dest)return;
+ if(!r){dest.innerHTML='<div class="banner warn">Vul geldige odds groter dan 1 en niet-negatieve bedragen in.</div>';return;}
+ const details=way=>`<tr><td>Beste verdeling</td>${way.add.map(v=>`<td class="right">${euro(v)}</td>`).join('')}${Array.from({length:3-n},()=>'<td class="right">—</td>').join('')}<td class="right ${currencyClass(way.minProfit)}"><b>${euro(way.minProfit)}</b></td></tr>`;
+ const altRows=r.alternatives.map((a,i)=>`<tr><td>Alternatief ${i+1}</td>${a.add.map(v=>`<td class="right">${euro(v)}</td>`).join('')}${Array.from({length:3-n},()=>'<td class="right">—</td>').join('')}<td class="right ${currencyClass(a.minProfit)}">${euro(a.minProfit)}</td></tr>`).join('');
+ const noExtra=r.extraOwn===0&&free.every(x=>x===0)&&already.every(x=>x===0);
+ dest.innerHTML=`<div class="grid">${metric('Minimale winst',euro(r.minProfit),'Bij voorgestelde verdeling',currencyClass(r.minProfit))}${metric('Extra eigen inzet',euro(r.extraOwn),'Binnen de limieten')}${metric('Eigen inzet totaal',euro(r.totalOwn),'Inclusief reeds geplaatst')}${metric('Nog vrij budget',euro(Math.max(0,budget-r.extraOwn)),'Niet extra ingezet')}</div><div class="sectionhead"><h3>Beste inzetverdeling</h3></div><div class="tablebox"><table><thead><tr><th>Uitkomst</th><th class="right">Extra inzet</th><th class="right">Netto resultaat als deze wint</th></tr></thead><tbody>${r.add.map((x,i)=>`<tr><td>Bet ${i+1}${caps[i]<budget?' (limiet)':''}</td><td class="right"><b>${euro(x)}</b></td><td class="right ${currencyClass(r.profitByOutcome[i])}">${euro(r.profitByOutcome[i])}</td></tr>`).join('')}</tbody></table></div><div class="sectionhead"><h3>Inzetten vlakbij het advies</h3></div>${r.alternatives.length?`<div class="tablebox"><table><thead><tr><th>Verdeling</th><th class="right">Bet 1</th><th class="right">Bet 2</th><th class="right">Bet 3</th><th class="right">Minimale winst</th></tr></thead><tbody>${details(r)}${altRows}</tbody></table></div>`:'<p class="helper">Geen andere geldige nabijgelegen verdeling binnen je limieten gevonden.</p>'}<p class="helper" style="margin-top:13px">${noExtra?'Met deze quoteringen is binnen het budget geen gegarandeerd winstgevende eigen-geld-inzet gevonden. De beste keuze op winstgarantie is dan geen extra inzet.':r.minProfit<0?'Let op: zelfs de beste verdeling volgens dit model kan verlies opleveren.':r.minProfit===0?'Met deze limieten is geen positieve minimale winst te bereiken; overweeg of je de freebet wilt inzetten.':'De verdeling is berekend op maximale minimale winst.'} Alle bedragen zijn na afronding doorgerekend. Controleer odds, bookmakerlimieten en uitslagvoorwaarden vóór inzet.</p>`;
+}
+function field(label,name,value='',type='text',extra=''){return `<div class="field"><label for="f-${name}">${label}</label><input id="f-${name}" class="fieldinput" name="${name}" type="${type}" ${type==='text'?'inputmode="'+(['event','note','name'].includes(name)?'text':'decimal')+'"':''} value="${esc(value??'')}" ${extra}></div>`}
+function formSelect(label,name,values,current){return `<div class="field"><label>${label}</label><select class="fieldinput" name="${name}">${opts(values,current)}</select></div>`}
+function modal(title,html,onSaveLabel='Opslaan'){overlay.innerHTML=`<div class="modal-overlay" id="modal-overlay"><section class="modal" role="dialog" aria-modal="true" aria-label="${esc(title)}"><div class="modal-header"><h2>${esc(title)}</h2><button type="button" class="btn small subtle" data-action="close-modal">Sluiten ✕</button></div><div class="modal-body">${html}</div><div class="modal-actions"><button type="button" class="btn" data-action="close-modal">Annuleren</button><button type="submit" form="entry-form" class="btn primary">${esc(onSaveLabel)}</button></div></section></div>`;}
+function openBet(b){
+ const edit=!!b;
+ b=b||{date:today(),event:'',type:'2way',winner:'open',settledDate:'',legs:[{book:E.allBooks(data)[0]||'',odd:'',stake:'',freebet:0},{book:E.allBooks(data)[1]||E.allBooks(data)[0]||'',odd:'',stake:'',freebet:0},{book:'',odd:'',stake:'',freebet:0}]};
+ const books=E.allBooks(data);
+ if(!books.length){alert('Voeg eerst een bookmaker toe in Portefeuille. Daarna kun je je bet invoeren.');goto('portfolio');return;}
+ const content=`<form id="entry-form" data-kind="bet" data-id="${esc(b.id||'')}" class="bet-entry-form">
+ <section class="bet-entry-section"><h3>1. Wedstrijd</h3><div class="formgrid">${field('Datum','date',b.date,'date','required')}${formSelect('Type weddenschap','type',['2way','3way','2plus3'],b.type)}<div class="span2">${field('Wedstrijd of omschrijving','event',b.event,'text','required placeholder="Bijv. Ajax – PSV"')}</div></div></section>
+ <section class="bet-entry-section"><div class="entry-section-heading"><h3>2. Inzetten</h3><span class="small muted">Freebet per bookmaker mogelijk</span></div>
+ ${[0,1,2].map(i=>`<div class="legfield" ${i===2?'id="third-leg"':''}><div class="entry-section-heading"><h3>Bet ${i+1}</h3><span id="leg-own-${i}" class="leg-own">Eigen inzet —</span></div><div class="formgrid">${legInputs(i,b.legs[i],books)}</div></div>`).join('')}
+ <p class="helper">Vul bij elke bet de volledige inzet in. Is deze helemaal gratis? Zet dan hetzelfde bedrag bij <b>Freebet</b>. Je eigen inzet wordt automatisch € 0.</p></section>
+ <section class="bet-entry-section"><h3>3. Controle vóór opslaan</h3><div class="bet-live-summary" id="bet-live-summary" aria-live="polite">Vul de odds en inzetten in om de verwachte winst te zien.</div></section>
+ <details class="bet-result-details" ${b.winner!=='open'?'open':''}><summary>4. Uitslag invullen <span class="muted small">(optioneel, kan later)</span></summary><div class="formgrid" style="padding-top:13px">${formSelect('Gewonnen uitkomst','winner',['open','1','2','3','23'],b.winner)}${field('Afrekendatum','settledDate',b.settledDate||'','date')}</div><p class="helper" style="margin-top:8px">Laat op <b>Open</b> staan als de wedstrijd nog loopt. Na afloop kun je de bet bewerken of op ‘Uitslag’ tikken.</p></details>
+ <p class="form-error" id="form-error" role="alert"></p></form>`;
+ modal(edit?'Bet bewerken':'Nieuwe bet toevoegen',content,edit?'Wijzigingen opslaan':'Bet opslaan');
+ if(edit)insertDelete();
+ fixWinOptions();updateBetPreview();
+}
+function legInputs(i,l,books){l=l||{book:books[0]||'',odd:'',stake:'',freebet:0};return `<div class="span2">${formSelect('Bookmaker','book'+i,books,l.book)}</div>${field('Odd','odd'+i,l.odd,'text','required placeholder="Bijv. 2,85"')}${field('Totale inzet (€)','stake'+i,l.stake,'text','required placeholder="Bijv. 50"')}<div class="span2">${field('Waarvan freebet (€)','free'+i,l.freebet,'text','placeholder="0"')}</div>`}
+function fixWinOptions(){
+ const f=document.getElementById('entry-form');if(!f||f.dataset.kind!=='bet')return;
+ const type=f.elements.type.value;
+ const third=document.getElementById('third-leg');
+ third.classList.toggle('hidden',type==='2way');
+ third.querySelectorAll('input,select').forEach(control=>control.disabled=type==='2way');
+ const sel=f.elements.winner,cur=sel.value;
+ const allowed=type==='2way'?['open','1','2']:type==='3way'?['open','1','2','3']:['open','1','23'];
+ for(const o of sel.options){o.hidden=!allowed.includes(o.value);o.disabled=o.hidden;}
+ if(!allowed.includes(cur))sel.value='open';
+ updateBetPreview();
+}
+function updateBetPreview(){
+ const f=document.getElementById('entry-form');if(!f||f.dataset.kind!=='bet')return;
+ const type=f.elements.type.value,count=type==='2way'?2:3;
+ const legs=[...Array(count)].map((_,i)=>({book:f.elements['book'+i].value,odd:num(f.elements['odd'+i].value),stake:num(f.elements['stake'+i].value),freebet:num(f.elements['free'+i].value)}));
+ for(let i=0;i<3;i++){
+  const label=document.getElementById('leg-own-'+i);
+  if(label)label.textContent=i<count?'Eigen inzet '+euro(E.own(legs[i])):'Eigen inzet —';
+ }
+ const panel=document.getElementById('bet-live-summary');if(!panel)return;
+ const good=legs.every(l=>l.book&&l.odd>1&&l.stake>0&&l.freebet>=0&&l.freebet<=l.stake);
+ if(!good){panel.innerHTML='<span class="muted">Vul voor alle actieve bets bookmaker, odd en totale inzet in. Freebet mag niet hoger zijn dan de inzet.</span>';return;}
+ const b={type,legs,winner:f.elements.winner.value};
+ const own=E.totalOwn(b),free=E.money(legs.reduce((s,l)=>s+l.freebet,0)),expected=E.expectedMin(b),actual=E.profit(b);
+ panel.innerHTML=`<div class="bet-summary-stats"><div><span>Eigen geld</span><strong>${euro(own)}</strong></div><div><span>Gebruikte freebets</span><strong>${euro(free)}</strong></div><div><span>Minimumwinst</span><strong class="${currencyClass(expected)}">${euro(expected)}</strong></div></div>${actual===null?'<p class="helper">Minimale verwachte winst, ongeacht welke uitkomst wint.</p>':`<div class="bet-actual-preview">Resultaat bij gekozen winnaar: <b class="${currencyClass(actual)}">${euro(actual)}</b></div>`}`;
+}
+function openBook(name,checking=false){const existing=data.books.find(b=>E.key(b.name)===E.key(name));if(checking&&!existing)return;const body=`<form id="entry-form" data-kind="${checking?'check':'book'}" data-old="${esc(name||'')}">${checking?`<p class="helper" style="margin-bottom:15px">Vul alleen het <b>werkelijk direct opneembare saldo</b> bij ${esc(name)} in.</p>${field('Echt opneembaar (€)','actual',existing?.actual??'')}`:field('Naam goksite','name',name||'','text','required inputmode="text"')}<p class="form-error" id="form-error"></p></form>`;modal(checking?'Saldocontrole: '+name:name?'Bookmaker wijzigen':'Bookmaker toevoegen',body);}
+function openFlow(rec){const edit=!!rec;rec=rec||{date:today(),book:E.allBooks(data)[0],type:'deposit',amount:'',note:''};modal(edit?'Mutatie wijzigen':'Nieuwe storting / opname',`<form id="entry-form" data-kind="flow" data-id="${esc(rec.id||'')}"><div class="formgrid">${field('Datum','date',rec.date||today(),'date')}${formSelect('Bookmaker','book',E.allBooks(data),rec.book)}${formSelect('Soort','type',['deposit','withdrawal'],rec.type)}${field('Bedrag (€)','amount',rec.amount,'text','required')}<div class="span2">${field('Opmerking','note',rec.note,'text','inputmode="text"')}</div></div><p class="form-error" id="form-error"></p></form>`);if(edit)insertDelete();}
+function openCasino(rec){const edit=!!rec;rec=rec||{date:today(),book:E.allBooks(data)[0],amount:'',note:''};modal(edit?'Casinowinst wijzigen':'Nieuwe casinowinst',`<form id="entry-form" data-kind="casino" data-id="${esc(rec.id||'')}"><div class="formgrid">${field('Datum','date',rec.date||today(),'date')}${formSelect('Bookmaker','book',E.allBooks(data),rec.book)}${field('Winst / correctie (€)','amount',rec.amount,'text','required')}<div class="span2">${field('Omschrijving','note',rec.note,'text','inputmode="text"')}</div></div><p class="helper" style="margin-top:12px">Negatieve bedragen zijn toegestaan voor correcties, bijvoorbeeld bij een eerder fout ingevoerde bijschrijving.</p><p class="form-error" id="form-error"></p></form>`);if(edit)insertDelete();}
+function settleBet(b){const choices=b.type==='2way'?[['1','Bet 1'],['2','Bet 2']]:b.type==='3way'?[['1','Bet 1'],['2','Bet 2'],['3','Bet 3']]:[['1','Bet 1'],['23','Bet 2 + 3']];
+ modal('Uitslag: '+b.event,`<form id="entry-form" data-kind="settle" data-id="${esc(b.id)}"><p class="helper" style="margin-bottom:14px">Welke uitkomst heeft gewonnen? De uitbetaling wordt automatisch op de juiste bookmaker bijgeschreven.</p><div class="field"><label>Winnende uitkomst</label><select class="fieldinput" name="winner">${opts(choices.map(x=>x[0]),b.winner==='open'?choices[0][0]:b.winner)}</select></div><div style="margin-top:12px">${field('Afrekendatum','settledDate',today(),'date')}</div><p class="form-error" id="form-error"></p></form>`,'Bet afronden');}
+function insertDelete(){const a=overlay.querySelector('.modal-actions');if(a)a.insertAdjacentHTML('afterbegin','<button type="button" class="btn danger" data-action="delete-item" style="margin-right:auto">Verwijderen</button>');}
+function closeModal(){overlay.innerHTML='';}
+function formError(message){const err=document.getElementById('form-error');if(err)err.textContent=message;}
+function saveForm(f){const fd=new FormData(f),g=name=>String(fd.get(name)||'').trim(),kind=f.dataset.kind;
+ if(kind==='bet'){
+  const type=g('type'),count=type==='2way'?2:3,winner=g('winner');const old=data.bets.find(b=>b.id===f.dataset.id);
+  if(!g('event')||!g('date'))return formError('Vul een wedstrijd en datum in.');
+  const legs=[];
+  for(let i=0;i<count;i++){
+   const odd=num(g('odd'+i)),stake=num(g('stake'+i)),freebet=num(g('free'+i)),book=g('book'+i);
+   if(!book||odd<=1||stake<0||freebet<0||freebet>stake||stake===0)return formError('Vul voor elke bet een bookmaker, odd > 1 en een inzet > 0 in. Freebet mag niet hoger zijn dan totale inzet.');
+   legs.push({book,odd,stake,freebet});
+  }
+  const valid=type==='2way'?['open','1','2']:type==='3way'?['open','1','2','3']:['open','1','23'];
+  if(!valid.includes(winner))return formError('Kies een geldige winnaar voor het type bet.');
+  const rec={id:old?.id||id(),createdAt:old?.createdAt||new Date().toISOString(),date:g('date'),event:g('event'),type,legs,winner,settledDate:winner==='open'?'':(g('settledDate')||today())};
+  if(old)Object.assign(old,rec);else data.bets.push(rec);
+ }else if(kind==='settle'){
+  const b=data.bets.find(b=>b.id===f.dataset.id);if(!b)return;
+  b.winner=g('winner');b.settledDate=g('settledDate')||today();
+ }else if(kind==='book'){
+  const name=g('name');if(!name)return formError('Vul een bookmakernaam in.');
+  const old=f.dataset.old;if(data.books.some(b=>E.key(b.name)===E.key(name)&&E.key(b.name)!==E.key(old)))return formError('Deze bookmaker bestaat al.');
+  if(old){const b=data.books.find(b=>E.key(b.name)===E.key(old));if(!b)return;b.name=name;
+   data.bets.forEach(bet=>bet.legs.forEach(l=>{if(E.key(l.book)===E.key(old))l.book=name}));data.flows.forEach(x=>{if(E.key(x.book)===E.key(old))x.book=name});data.casinos.forEach(x=>{if(E.key(x.book)===E.key(old))x.book=name});
+  }else data.books.push({id:id(),name,actual:null});
+ }else if(kind==='check'){
+  const b=data.books.find(x=>E.key(x.name)===E.key(f.dataset.old));if(!b)return;
+  b.actual=g('actual')===''?null:E.money(num(g('actual')));
+ }else if(kind==='flow'){
+  const amount=num(g('amount'));if(amount<=0||!g('book'))return formError('Voer een bedrag groter dan €0 en een bookmaker in.');
+  const old=data.flows.find(x=>x.id===f.dataset.id),entry={id:old?.id||id(),date:g('date'),book:g('book'),type:g('type'),amount:E.money(amount),note:g('note')};
+  if(old)Object.assign(old,entry);else data.flows.push(entry);
+ }else if(kind==='casino'){
+  if(g('amount')===''||!g('book'))return formError('Vul een bedrag en bookmaker in.');
+  const old=data.casinos.find(x=>x.id===f.dataset.id),entry={id:old?.id||id(),date:g('date'),book:g('book'),amount:E.money(num(g('amount'))),note:g('note')};
+  if(old)Object.assign(old,entry);else data.casinos.push(entry);
+ }
+ persist();closeModal();render();if(view==='calculator')recalc();
+}
+function backUp(){const file='surebet-backup-'+today()+'.json';const content=JSON.stringify({...data,exportedAt:new Date().toISOString()},null,2);const blob=new Blob([content],{type:'application/json'});
+ if(navigator.canShare&&navigator.share){const f=new File([blob],file,{type:'application/json'});if(navigator.canShare({files:[f]})){navigator.share({files:[f],title:'Surebet back-up'}).catch(()=>{});return;}}
+ const a=document.createElement('a');const url=URL.createObjectURL(blob);a.href=url;a.download=file;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),15000);
+}
+async function restore(file){if(!file)return;try{const incoming=JSON.parse(await file.text());if(!validState(incoming))throw Error('Dit is geen geldig Surebet back-upbestand.');if(!confirm('Je huidige gegevens vervangen door deze back-up? Maak zo nodig eerst een back-up van de huidige versie.'))return;data={version:2,books:incoming.books,bets:incoming.bets,flows:incoming.flows,casinos:incoming.casinos};persist();goto('dashboard');alert('Back-up hersteld.');}catch(e){alert('Importeren mislukt: '+e.message)}}
+function showMore(){menuOpen=!menuOpen;shell()}
+document.addEventListener('click',e=>{
+ const nav=e.target.closest('[data-nav]');if(nav){goto(nav.dataset.nav);return}
+ const action=e.target.closest('[data-action]');if(!action)return;const a=action.dataset.action,recordId=action.dataset.id;
+ switch(a){case 'more':showMore();break;
+ case 'new-bet':openBet(null);break;case 'edit-bet':openBet(data.bets.find(b=>b.id===recordId));break;case 'settle-bet':settleBet(data.bets.find(b=>b.id===recordId));break;
+ case 'new-book':openBook('');break;case 'edit-book':openBook(action.dataset.name);break;case 'check-book':openBook(action.dataset.name,true);break;
+ case 'new-flow':openFlow(null);break;case 'edit-flow':openFlow(data.flows.find(x=>x.id===recordId));break;
+ case 'new-casino':openCasino(null);break;case 'edit-casino':openCasino(data.casinos.find(x=>x.id===recordId));break;
+ case 'close-modal':closeModal();break;
+ case 'delete-item':{const f=document.getElementById('entry-form');if(!f)return;const k=f.dataset.kind,idv=f.dataset.id,arr=k==='bet'?'bets':k==='flow'?'flows':k==='casino'?'casinos':null;if(arr&&confirm('Deze registratie definitief verwijderen?')){data[arr]=data[arr].filter(x=>x.id!==idv);persist();closeModal();render()}break;}
+ case 'backup':backUp();break;case 'restore':document.getElementById('restore-file').click();break;case 'show-bets':goto('bets');break;
+ }
+});
+// Prevent losing records by allowing delete from within edit dialogs.
+document.addEventListener('click',e=>{if(e.target.id==='modal-overlay'&&!document.querySelector('#entry-form[data-kind="bet"]'))closeModal()});
+document.addEventListener('submit',e=>{if(e.target.id==='entry-form'){e.preventDefault();saveForm(e.target)}});
+document.addEventListener('change',e=>{
+ if(e.target.name==='type'&&e.target.closest('#entry-form'))fixWinOptions();
+ else if(e.target.closest('#entry-form')?.dataset.kind==='bet')updateBetPreview();
+ if(e.target.id==='bet-filter'){filter=e.target.value==='Open'?'open':e.target.value==='Afgerond'?'closed':'all';render()}
+ if(e.target.id==='bet-sort'){sort=e.target.value==='Oudste eerst'?'oldest':'newest';render()}
+ if(e.target.id==='calc-type'||e.target.id==='calc-round')recalc();
+ if(e.target.id==='restore-file'){restore(e.target.files[0]);e.target.value=''}
+});
+document.addEventListener('input',e=>{
+ if(e.target.id==='bet-search'){search=e.target.value;const pos=e.target.selectionStart;render();const input=document.getElementById('bet-search');input.focus();input.setSelectionRange(pos,pos);}
+ if(e.target.classList.contains('calc-input')||e.target.id==='calc-budget')recalc();
+ if(e.target.closest('#entry-form')?.dataset.kind==='bet')updateBetPreview();
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+window.addEventListener('storage',e=>{if(e.key===STORAGE&&e.newValue){try{const d=JSON.parse(e.newValue);if(validState(d)){data=d;render()}}catch(_){}}});
+render();if(view==='calculator')recalc();
+if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(()=>{});
+})();
+</script></body></html>
